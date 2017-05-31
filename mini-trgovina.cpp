@@ -27,7 +27,7 @@ int main()
         cin >> izbor;
         if( izbor == 1 )
         {
-            cout << "Unesite naziv artikla: ";
+            cout << "Unesite barkod artikla: ";
             cin>>barkod [brojArtikla];
             cout <<"Unesite naziv artikla: ";
             cin.ignore();
@@ -41,7 +41,7 @@ int main()
             cout << "bar kod" << "\t" << "naziv artikla" << "\t" << "cijena" << endl;
             for( int i = 0; i < brojArtikla; i++ )
             {
-                cout << artikli[i] << endl;
+                cout <<barkod[i]<<"\t"<<artikli [i]<<"\t" << cijena [i]<<endl;
             }
         }
         else if( izbor == 3 )
