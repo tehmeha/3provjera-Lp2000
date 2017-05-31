@@ -34,6 +34,9 @@ int main()
             getline(cin, artikli[brojArtikla]);
             cout<<"Unesite cijena artikla" ;
             cin>>cijena[brojArtikla];
+            datotekaUpisivanje.open("artikli.cpp", ios::app);
+            datotekaUpisivanje<<barkod[brojArtikla]<<endl;
+            datotekaUpisivanje <<artikli [brojArtikla]<<endl;
             brojArtikla++;
         }
         else if( izbor == 2 )
@@ -83,6 +86,7 @@ int main()
         }
         else if( izbor == 5 )
         {
+
         }
         else if( izbor == 6 )
         {
