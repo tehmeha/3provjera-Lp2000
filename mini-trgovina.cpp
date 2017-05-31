@@ -8,6 +8,8 @@ int main()
     int izbor;
     int MAX = 50;
     string artikli[MAX];
+    unsigned long long int barkod[MAX];
+    float cijena[MAX];
     ofstream datotekaUpisivanje;
     ifstream datotekaUcitavanje;
 
@@ -26,8 +28,12 @@ int main()
         if( izbor == 1 )
         {
             cout << "Unesite naziv artikla: ";
+            cin>>barkod [brojArtikla];
+            cout <<"Unesite naziv artikla: ";
             cin.ignore();
             getline(cin, artikli[brojArtikla]);
+            cout<<"Unesite cijena artikla" ;
+            cin>>cijena[brojArtikla];
             brojArtikla++;
         }
         else if( izbor == 2 )
